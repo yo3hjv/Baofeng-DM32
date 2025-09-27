@@ -1,0 +1,9 @@
+A short note about restoring the FW. 
+After extensive testing, I found that the FLASH memory where the FW is stored has an inconsistency in writing to one of the addresses. 
+The content of that address could be erased but could not be written so that DM32 did not work. 
+After replacing it with another chip, it was necessary to rewrite the GD25Q80 flash with a bin that I obtained from another station. 
+Unfortunately, no matter what combinations I tried, the station displays the error "Incorrect HW version" in Chinese. 
+The conclusion is that restoring with the Flash memory image obtained from another station is impossible, as a specific hardware encoding is involved. 
+I did the reading/writing of the GD25Q80 flash with an external reader and NeoProgrammer. 
+
+From this point on, it becomes more convenient to purchase a new station and throw the defective one in the bin.
